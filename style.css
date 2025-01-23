@@ -1,0 +1,257 @@
+nav img{
+    height: 50px;
+    width:50px;
+}
+header{
+    position: relative;
+}
+nav{
+    position: absolute;
+    top:2em;
+    width: 100%;
+    opacity: 95%;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 20%;
+    z-index: 10;
+    box-sizing: border-box;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.textBanner button:hover{
+background-color: orange;
+}
+banner{
+    position:relative;
+    width:100%;
+    height:50vh;
+}
+.banner img{
+    width: 100%;
+    position:relative;
+    object-fit: cover;
+    height: 70%;
+}
+
+.textBanner{
+    position: absolute;
+    z-index: 5;
+    color:white;
+    top:3em;
+    left: 5em;
+    right: 15em;
+    padding: 5em;
+    font-size: 23px;
+    
+
+}
+
+.textBanner button {
+    padding:1em;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.eventosTitle{
+    display:flex;
+    justify-content: center;
+
+}
+
+.eventDiv img{
+    width: 500px;
+    margin: 20px;
+}
+
+.eventDiv{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.subscriptionForm{
+    background: black;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+
+}
+.subscriptionForm p {
+    margin-top: 3em;
+    font-size: 23px;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.subscriptionForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30%;
+    background-color: #f9f9f9;
+    margin-bottom: 3em;
+    padding: 4em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+    
+    
+}
+.blogTitle{
+    display: flex;
+    justify-content: center;
+    
+}
+.videosTitle{
+    display: flex;
+    justify-content: center; 
+    
+}
+.moderadoresTitle{
+    display: flex;
+    justify-content: center;
+}
+
+form button{
+    background-color: black;
+    color:white;
+    padding: 1em; 
+    border-radius: 1em;
+}
+.moderatorsDiv{
+    background:black;
+    color:white;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+}
+.moderatorsDiv img{
+    width:400px;   
+}
+
+.VideoDiv{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footerGrid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+footer{
+    padding-left: 10%;
+    background-color: orange;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color:black;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(72, 16, 85);
+}
+
+.textForm{
+    margin-right: 3em;
+    margin-left: 3em;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .textBanner {
+        top: 5em; 
+        left: 1em; 
+        right: 1em; 
+        font-size: 16px; 
+    }
+   
+    .banner img{
+        height: 70%;
+    }
+   
+}
+
+@media (max-width: 750px) {
+    .iconImg{
+        display: none;
+    }
+    .subscriptionForm form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:70%;
+        background-color: #f9f9f9;
+        margin: 20%;
+        padding: 2em;
+        border-radius: 10px;
+        
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    nav a{
+    margin-left:2em;
+    }
+    .textBanner {
+        top: 5em; 
+        padding:1em;
+        right: 1em; 
+        font-size: 23px; 
+    }
+    h1{
+        font-size: 25px;
+    }
+    .banner img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .subscriptionForm form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:70%;
+        background-color: #f9f9f9;
+        margin: 20%;
+        padding: 2em;
+        border-radius: 10px;
+        
+    }
+    
+    .iconImg{
+        display: none;
+    }
+
+  
+}
